@@ -1,3 +1,5 @@
+![photo_2021-07-01_19-40-34](https://user-images.githubusercontent.com/69866859/124138412-40b49400-daa4-11eb-8252-10e6e99b97c7.jpg)
+
 # MovieRecommendationSystem
 
 Description
@@ -20,3 +22,10 @@ Features
  //Snapshots
  
  
+![photo_2021-07-01_19-41-15](https://user-images.githubusercontent.com/69866859/124138617-72c5f600-daa4-11eb-9306-83cd7c695a0d.jpg)
+
+
+
+
+![photo_2021-07-01_19-41-34](https://user-images.githubusercontent.com/69866859/124138866-b456a100-daa4-11eb-9c11-48eb61db64cf.jpg)
+
