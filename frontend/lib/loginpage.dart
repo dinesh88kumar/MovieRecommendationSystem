@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:js_util';
 
 import 'package:flutter/material.dart';
+import 'package:frontend/dashboard.dart';
 import 'package:frontend/premierRecomm.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
@@ -41,25 +42,31 @@ class _LoginPageState extends State<LoginPage> {
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
             child: Row(
               children: [
-                Container(
-                  decoration: BoxDecoration(
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => Dashboard()));
+                  },
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          bottomLeft: Radius.circular(20),
+                        ),
+                        color: Colors.black54),
+                    height: 500,
+                    width: size.width / 4,
+                    child: ClipRRect(
                       borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(20),
                         bottomLeft: Radius.circular(20),
                       ),
-                      color: Colors.black54),
-                  height: 500,
-                  width: size.width / 4,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      bottomLeft: Radius.circular(20),
-                    ),
-                    child: Image.network(
-                      'https://th.bing.com/th/id/Radb6b7596a16d8b8ac7d22b3ee8f496b?rik=UgfiurVGb0QK8g&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2016%2f05%2fmovie-tickets-vector-free_401932.jpg&ehk=R6SfNQt9oko1kOaCtAXvLrZ8Dkft3d436EY0mpqiRC4%3d&risl=&pid=ImgRaw',
-                      height: 500,
-                      width: size.width / 4,
-                      fit: BoxFit.cover,
+                      child: Image.network(
+                        'https://th.bing.com/th/id/Radb6b7596a16d8b8ac7d22b3ee8f496b?rik=UgfiurVGb0QK8g&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2016%2f05%2fmovie-tickets-vector-free_401932.jpg&ehk=R6SfNQt9oko1kOaCtAXvLrZ8Dkft3d436EY0mpqiRC4%3d&risl=&pid=ImgRaw',
+                        height: 500,
+                        width: size.width / 4,
+                        fit: BoxFit.cover,
+                      ),
                     ),
                   ),
                 ),
@@ -108,7 +115,7 @@ class _LoginPageState extends State<LoginPage> {
                                   } else if (int.parse(value) < 0 ||
                                       int.parse(value) > 610) {
                                     return 'Invalid';
-                                  }
+                                  } 
                                 },
                                 onChanged: (value) {
                                   setState(() {

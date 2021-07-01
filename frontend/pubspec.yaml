@@ -34,6 +34,7 @@ dependencies:
   firebase_auth:
   firebase_core:
   hovering: ^1.0.4
+  flutter_carousel_slider: ^1.0.8
   form_field_validator:
 dev_dependencies:
   flutter_test:

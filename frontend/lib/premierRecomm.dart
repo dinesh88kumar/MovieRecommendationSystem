@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_carousel_slider/carousel_slider.dart';
 import 'package:frontend/loginpage.dart';
 import 'package:frontend/showdata.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -26,7 +27,7 @@ class _PremierState extends State<Premier> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-        backgroundColor: Colors.blue.shade100,
+        backgroundColor: Colors.black,
         body: Container(
             child: ListView(
           children: [
@@ -76,7 +77,7 @@ class _PremierState extends State<Premier> {
               ),
             ),
             SizedBox(
-              height: 60,
+              height: 20,
             ),
             GestureDetector(
               onTap: () async {
@@ -139,6 +140,65 @@ class _PremierState extends State<Premier> {
             SizedBox(
               height: 20,
             ),
+            Container(
+              height: 500,
+              width: size.width / 2.5,
+              child: CarouselSlider(
+                  children: [
+                    Image.network(
+                      'https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2014/11/predestination-2014.png?resize=678%2C381',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://th.bing.com/th/id/OIP.6q29_Zaz2xNH2DPJVEIIgQHaEK?pid=ImgDet&rs=1',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://i2.wp.com/sreditingzone.com/wp-content/uploads/2018/01/Movie-Poser-Png-By-SR-Editing-Zone-16.png?resize=800%2C310&ssl=1',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://th.bing.com/th/id/OIP.6q29_Zaz2xNH2DPJVEIIgQHaEK?pid=ImgDet&rs=1',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2014/11/predestination-2014.png?resize=678%2C381',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://i2.wp.com/sreditingzone.com/wp-content/uploads/2018/01/Movie-Poser-Png-By-SR-Editing-Zone-16.png?resize=800%2C310&ssl=1',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2014/11/predestination-2014.png?resize=678%2C381',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://th.bing.com/th/id/OIP.6q29_Zaz2xNH2DPJVEIIgQHaEK?pid=ImgDet&rs=1',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://i2.wp.com/sreditingzone.com/wp-content/uploads/2018/01/Movie-Poser-Png-By-SR-Editing-Zone-16.png?resize=800%2C310&ssl=1',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://th.bing.com/th/id/OIP.6q29_Zaz2xNH2DPJVEIIgQHaEK?pid=ImgDet&rs=1',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://i2.wp.com/www.astronomytrek.com/wp-content/uploads/2014/11/predestination-2014.png?resize=678%2C381',
+                      fit: BoxFit.contain,
+                    ),
+                    Image.network(
+                      'https://i2.wp.com/sreditingzone.com/wp-content/uploads/2018/01/Movie-Poser-Png-By-SR-Editing-Zone-16.png?resize=800%2C310&ssl=1',
+                      fit: BoxFit.contain,
+                    ),
+                  ],
+                  enableAutoSlider: true,
+                  keepPage: true,
+                  autoSliderDelay: Duration(seconds: 2),
+                  autoSliderTransitionTime: Duration(seconds: 2)),
+            )
           ],
         )));
   }
