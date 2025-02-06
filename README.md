@@ -1,31 +1,28 @@
-![photo_2021-07-01_19-40-34](https://user-images.githubusercontent.com/69866859/124138412-40b49400-daa4-11eb-8252-10e6e99b97c7.jpg)
+# Movie Recommendation System
 
-# MovieRecommendationSystem
+A Flask-based web application that provides personalized movie recommendations tailored to user preferences. The system offers different recommendation strategies for free and premium users, leveraging machine learning and collaborative filtering techniques.
 
-Description
+## Features
 
-It recommends the movies based on user tastes.
+### Free Users
+- **Genre-based Recommendations**: Suggests movies similar to the user's selected genre, utilizing content-based filtering to match movie attributes.
 
-Languages and Technologies
+### Premium Users
+- **Personalized Recommendations**: Employs collaborative filtering to recommend movies highly rated by users with similar tastes, enhancing relevance through user behavior analysis.
 
-This project utilzies python,Flask and tensorflow.We used flutter for front-end.
+## Technologies Used
 
-Features
+### Front-end
+- **Flutter**: A cross-platform framework for building the user interface.
 
-    *Free recommendation
-        The recommendation recommends other movies which are similar to that selected genre
-        
-        
-    *premium users
-        The recommendation recommends movies which are rated highly by the similar users...
-        
- //Snapshots
- 
- 
-![photo_2021-07-01_19-41-15](https://user-images.githubusercontent.com/69866859/124138617-72c5f600-daa4-11eb-9306-83cd7c695a0d.jpg)
+### Back-end
+- **Python**: Primary programming language for server-side logic.
+- **Flask**: A lightweight web framework for handling HTTP requests and responses.
+- **TensorFlow**: Machine learning library for building and training recommendation models.
 
+## Installation
 
-
-
-![photo_2021-07-01_19-41-34](https://user-images.githubusercontent.com/69866859/124138866-b456a100-daa4-11eb-9c11-48eb61db64cf.jpg)
-
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/your-username/MovieRecommendationSystem.git
+   cd MovieRecommendationSystem
